@@ -1,3 +1,4 @@
+// Parent Class
 class Employee {
     void display() {
         System.out.println("Name of class is Employee");
@@ -5,6 +6,7 @@ class Employee {
 }
 
 class Engineer extends Employee {
+   
     @Override
     void display() {
         System.out.println("Name of class is Engineer");
@@ -13,9 +15,10 @@ class Engineer extends Employee {
     }
 }
 
-public class Main {
+public class MethodOverriding {
     public static void main(String[] args) {
-        Engineer e = new Engineer();
-        e.display();
+
+        Engineer eng = new Engineer();
+        eng.display();
     }
 }
